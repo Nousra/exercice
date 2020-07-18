@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inscription</title>
+        <meta charset="utf-8"
+        <link rel="shorcut icon" href="nousra.jpg"/>
+    </head>
+    <body>
+        <center bgcolor="pink"><H1>Bienvenue sur la bibliotheque virtuelle de ISPM</H1></center>
+          <img src="ISPM.jpg" align="left"  alt="logo de ISPM"/>
+        <input type="text" name="pseudo" id="pseudo" placeholder="pseudo" align="right" />
+         <input type="text" name="mot de passe" id="mot de passe" placeholder="Mot de passe" align="right" />
+         <input type="text" name="S'identifier" id="S'identifier" placeholder="S'identifier" align="center" />
+        <h4><b align="left">Inscription</b></h4>
+         <form method="post" action="traitement.php">
+        <p>
+        <fieldset>
+             <legend>Profil</legend>
+             <label for="nom">Nom :</label>
+             <input type="text" name="nom" id="nom" placeholder="ex : Nousra"/>
+            <br>
+            <label for="prenom(s)">Prénom(s) :</label>
+            <input type="text" name="prenom(s)" id="prenom(s)" placeholder="ex : Said Ali Dainane"/>
+            <br>
+            Sexe  
+            <input type="checkbox" name="homme" id="homme"/>
+            <label for="homme">Masculin</label><br>
+            <input type="checkbox" name="femme" id="femme"/>
+            <label for="femme">Féminin</label><br> 
+            <label for="filiere">Filière :</label>
+            <select name="filiere" id="filiere">
+                <option value="IGGLIA">IGGLIA</option>
+                <option value="IMTICIA">IMTICIA</option>
+                <option value="ISAIA">ISAIA</option>
+                <option value="ESIIA">ESIIA</option>
+                <option value="GCA">GCA</option>
+                <option value="EMII">EMII</option>
+                <option value="IAA">IAA</option>
+            </select><br>
+            
+            <label for="niveau">Niveau </label>
+            <input type="text" name="niveau" id="niveau"/>
+        </fieldset>
+            </p>
+        <p>
+            <fieldset>
+                <legend>Adresse éléctronique</legend>
+                <label for="num" >Tel :</label>
+                <input type="tel" name="num" id="num" placeholder="+261343735256"><br>
+                <label for="e-mail">e-mail  </label>
+                <input type="email" name="e-mail" id="e-mail" placeholder="ex: nousra@gmail.com"/>
+            </fieldset>
+        </p>
+            <fieldset>
+                <legend>Adresse physique</legend>
+                <label for="discrit">Discrit  </label>
+                <input name="discrit" id="discrit" placeholder="ex: Atsimondrano"><br>
+                <label for="commune">Commune</label>
+                <input name="commune" id="commune" placeholder="ex: Ambohijanaka"/><br>
+                <label for="fokotany">Fokontany</label>
+                <input name="fokotany" id="fokotany" placeholder="ex: Lohanosy"/><br>
+                <label>Logement</label>
+                <input id="logement" placeholder="ex: II A 29 Ter"/>
+            </fieldset>
+              <button type="button">Annuler</button>
+                <button type="subtim">Envoyer</button>
+        </form>
+    </body>
+</html>
